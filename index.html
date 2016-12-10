@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Hard coded button associativites: 
+	 button1 => button2
+	 button2 => button3
+	 button3 => button4
+	 button4 => button5 -->
+
+<p>Play the game.</p>
+
+<input type="button" onclick="button1()" value="ON" id="button1"></button>
+<input type="button" onclick="button2()" value="ON" id="button2"></button>
+<input type="button" onclick="button3()" value="ON" id="button3"></button>
+<input type="button" onclick="button4()" value="ON" id="button4"></button>
+
+
+<p id="demo"></p>
+
+<script>
+function button1() 
+{
+	var elem = document.getElementById("button1");
+	var elem2 = document.getElementById("button2");
+
+    if (elem.value=="ON") 
+    {
+		elem.value = "OFF";
+    }
+    else 
+    {
+    	elem.value = "ON";
+    }
+}
+
+function button2() 
+{
+	var elem = document.getElementById("button2");
+	var elem2 = document.getElementById("button3");
+
+    if (elem.value=="ON") 
+    {
+		elem.value = "OFF";
+    }
+    else 
+    {
+    	elem.value = "ON";
+    }
+}
+
+function button3() 
+{
+	var elem = document.getElementById("button3");
+	var elem2 = document.getElementById("button4");
+
+    if (elem.value=="ON") 
+    {
+		elem.value = "OFF";
+    }
+    else 
+    {
+    	elem.value = "ON";
+    }
+}
+
+function button4() 
+{
+	var elem = document.getElementById("button4");
+	var elem2 = document.getElementById("button1");
+
+    if (elem.value=="ON") 
+    {
+		elem.value = "OFF";
+    }
+    else 
+    {
+    	elem.value = "ON";
+    }
+}
+</script>
+
+</body>
+</html>
